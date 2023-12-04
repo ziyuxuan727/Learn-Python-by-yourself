@@ -46,11 +46,18 @@
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 my_list_1 = []
 
-# 使用while循环
+# # 使用while循环
+# index = 0
+# while index < len(my_list):
+#     element = my_list[index]
+#     if element % 2 == 0:
+#         my_list_1.append(element)
+#     index += 1
+# print(f"通过while循环，从列表：{my_list}中取出偶数，组成新列表:{my_list_1}")
+
+# 使用for循环
 index = 0
-while index < len(my_list):
-    element = my_list[index]
+for element in range(1,11):
     if element % 2 == 0:
         my_list_1.append(element)
-    index += 1
-print(f"通过while循环，从列表：{my_list}中取出偶数，组成新列表:{my_list_1}")
+print(f"通过for循环，从列表：{my_list}中取出偶数，组成心列表：{my_list_1}")
